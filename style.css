@@ -1,0 +1,241 @@
+*{
+    margin: 0;padding: 0;outline: none;
+    box-sizing: border-box;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    font-family:  Helvetica, sans-serif;
+    user-select: none;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+#main{
+    height: 100%;
+    width: 100%;
+}
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    position: fixed;
+    padding: 30px 40px;
+    z-index: 100;
+}
+nav h4 , nav h3{
+    font-size: 22px;
+    font-weight: 600;
+    background-color: #fb6000;
+    border: 2px solid #fff;
+    color: wheat;
+    padding: 3px 12px;
+    border-radius: 50px;
+    cursor: pointer;
+    user-select: none;
+    transition: all .3s ease;
+}
+nav h4:hover {
+    background-color: #f64a0b;    
+    transform: translateX(4px);
+   
+}
+.intro{
+    height: 45%;
+    width: 100%;
+    background-color: bisque;
+}
+.intro h1{
+    font-size:70px ;
+    text-transform: capitalize;
+    line-height: 70px;
+    letter-spacing: -1px;
+    font-weight: 700;
+    padding: 20px;
+
+}
+.intro .intro_bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    margin: 10px;
+    font-size: 20px;
+    
+}
+#hero_image{
+    height: 100%;
+    width: 100%;
+    /* background-color: orange; */
+    background-image: url(https://images.unsplash.com/photo-1570213464614-d51b661c422f?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 25% 60%;
+}
+
+
+#about{
+    height: 45%;
+    width: 100%;
+    background-color: bisque;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   padding: 30px 20px;
+ 
+}
+
+#about h2{
+    width: 60%;
+    height: 100%;
+    font-size: 49px;
+    line-height: 48px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    padding: 0 5px;
+    border-radius: 10px;
+    /* background-color:orange ; */
+   
+}
+#about .about_subpart{
+    /* background-color: rgba(242, 28, 28, 0.666); */
+    width: 30%;
+    height: 100%;
+    padding: 20px;
+    border-left: 3px solid #171618;
+    /* border-radius: 10px; */
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+}
+#about .about_subpart h3,#about .about_subpart .icons {
+    padding: 0 30px;
+    font-size: 26px;
+}
+#about .about_subpart .icons i{
+    font-size: 25px;
+    color: #171618;  
+    padding: 0 5px;
+ 
+}
+#about .about_subpart .icons i:hover{
+    color: #008efb;
+}
+
+
+
+.services{
+    background-color: bisque;
+    width: 100%;
+    padding: 30px 20px;
+    display: flex;
+    border-top: 2px solid #000;
+}
+.services .left{
+    /* background: green; */
+
+    display: flex;
+    border-right: 2px solid #000;
+    justify-content: space-between;
+    width: 30%;
+    padding: 30px 15px;
+  
+}
+.services .left i{
+    font-size: 20px;
+}
+.services .right{
+    /* background-color: blue; */
+   
+   width: 70%;
+   display: flex;
+   
+}
+
+.services .right .top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 30px 15px;
+}
+
+.services .right .bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 30px 15px;
+   gap: 30px;
+}
+
+.services .right .top .first,.services .right .top .second{
+    border-right: 2px solid black;
+   
+}
+.services .right .top .first,.services .right .bottom .second,
+.services .right .bottom .first,.services .right .top .second{
+    padding: 10px;
+}
+
+.services h4{
+    font-size: 28px;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+/* SIDE BAR */
+
+#sidebar{
+    width: 30%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+   background-color: rgb(255, 206, 145);
+    
+    position: fixed;
+    top: 0;
+    right: -50%;
+
+    z-index: 10;
+    
+    transition: all .3s ease-in-out !important;
+    
+       
+}
+#sidebar ul {
+    margin-top: 50%;
+}
+#sidebar ul li{
+     list-style: none;
+}
+#sidebar ul li a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.789);
+    font-size: 24px;
+    font-weight: 550;
+    line-height: 50px;
+
+}
+#sidebar ul li  {
+
+    margin: 10px 0;
+    padding: 0 10px;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+/* MENU BTN */
